@@ -1,2 +1,2 @@
 # LGN
-A small rendering engine.
+An OpenGL rendering engine.

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParticleSystem", "ParticleSystem\ParticleSystem.vcxproj", "{49D76673-62A9-440D-BB4E-15B80AA7C4DF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "LGN\LGN.vcxproj", "{0F492067-9550-4DF9-88A1-BAA4C5019A32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F492067-9550-4DF9-88A1-BAA4C5019A32}.Debug|x64.ActiveCfg = Debug|x64
+		{0F492067-9550-4DF9-88A1-BAA4C5019A32}.Debug|x64.Build.0 = Debug|x64
+		{0F492067-9550-4DF9-88A1-BAA4C5019A32}.Release|x64.ActiveCfg = Release|x64
+		{0F492067-9550-4DF9-88A1-BAA4C5019A32}.Release|x64.Build.0 = Release|x64
+		{49D76673-62A9-440D-BB4E-15B80AA7C4DF}.Debug|x64.ActiveCfg = Debug|x64
+		{49D76673-62A9-440D-BB4E-15B80AA7C4DF}.Debug|x64.Build.0 = Debug|x64
+		{49D76673-62A9-440D-BB4E-15B80AA7C4DF}.Release|x64.ActiveCfg = Release|x64
+		{49D76673-62A9-440D-BB4E-15B80AA7C4DF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {134B673F-B65D-45BD-AABC-AFC491DB5805}
+	EndGlobalSection
+EndGlobal

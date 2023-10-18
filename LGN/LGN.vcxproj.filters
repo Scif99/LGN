@@ -24,9 +24,15 @@
     <ClInclude Include="src\LGN\entry_point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\LGN\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LGN\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LGN\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

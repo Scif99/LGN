@@ -2,6 +2,9 @@
 
 #include "log.h"
 
+
+
+
 extern LGN::Application* LGN::CreateApplication();
 
 int main(int argc, char** argv)

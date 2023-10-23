@@ -56,15 +56,21 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;GLFW_INCLUDE_NONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)LGN\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)LGN\vendor\spdlog\include;C:\Users\Soleh\OneDrive\Documents\Coding\Graphics\LGN\LGN\vendor\GLAD\include;C:\Users\Soleh\OneDrive\Documents\Coding\Graphics\LGN\LGN\vendor\GLFW\include;C:\Users\Soleh\OneDrive\Documents\Coding\Graphics\LGN\LGN\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>glfw3.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Users\Soleh\OneDrive\Documents\Coding\Graphics\LGN\LGN\vendor\GLFW\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -75,7 +81,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)LGN\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)LGN\vendor\spdlog\include;C:\Users\Soleh\OneDrive\Documents\Coding\Graphics\LGN\LGN\vendor\GLAD\include;C:\Users\Soleh\OneDrive\Documents\Coding\Graphics\LGN\LGN\vendor\GLFW\include;C:\Users\Soleh\OneDrive\Documents\Coding\Graphics\LGN\LGN\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,16 +89,28 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>glfw3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Soleh\OneDrive\Documents\Coding\Graphics\LGN\LGN\vendor\GLFW\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\lgn.h" />
     <ClInclude Include="src\LGN\application.h" />
     <ClInclude Include="src\LGN\entry_point.h" />
     <ClInclude Include="src\LGN\log.h" />
+    <ClInclude Include="src\LGN\platform\windows\windows_window.h" />
+    <ClInclude Include="vendor\GLAD\include\glad\glad.h" />
+    <ClInclude Include="vendor\GLFW\include\GLFW\glfw3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LGN\application.cpp" />
     <ClCompile Include="src\LGN\Log.cpp" />
+    <ClCompile Include="src\LGN\platform\windows\windows_window.cpp" />
+    <ClCompile Include="vendor\GLAD\src\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="vendor\GLFW\lib\glfw3.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

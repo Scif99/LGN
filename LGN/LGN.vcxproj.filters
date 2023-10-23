@@ -27,6 +27,15 @@
     <ClInclude Include="src\LGN\log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="vendor\GLFW\include\GLFW\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LGN\platform\windows\windows_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\GLAD\include\glad\glad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LGN\application.cpp">
@@ -35,5 +44,14 @@
     <ClCompile Include="src\LGN\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\LGN\platform\windows\windows_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\GLAD\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="vendor\GLFW\lib\glfw3.lib" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "window.h"
 
 namespace LGN 
 {
@@ -10,9 +11,13 @@ namespace LGN
 		virtual ~Application();
 
 		void Run();
+
+	private:
+		std::unique_ptr<Window> m_window;
+		bool m_running = true;
 	};
+
 
 	//Defined in client
 	Application* CreateApplication();
-
 }
